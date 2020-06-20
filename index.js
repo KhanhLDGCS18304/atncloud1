@@ -1,6 +1,7 @@
 let express =require('express');
 let app = express();
 var http = require('http');
+const port = process.env.port || 5500
 
 //Set public startic folder
 app.use(express.static(__dirname+'/public'));
